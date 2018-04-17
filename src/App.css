@@ -1,0 +1,175 @@
+.App {
+  text-align: center;
+  background-color: black;
+  color:white;
+  width:100%;
+  height:100%;
+  position: absolute;
+}
+
+.logo{
+  margin-top:20px;
+}
+/*preloader style*/
+.loader-container{
+  width:100%;
+  height:100%;
+  position:absolute;
+  background: black;
+  text-align: center;
+}
+.loaderr {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid cyan;
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+  margin:25% auto;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+/*end preloader*/
+
+.App-intro {
+  font-size: large;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+/*search bar style*/
+.searchBar{
+  width:100%;
+  color:white;
+  margin-top:50px;
+}
+.searchBar>label{
+  display:block;
+  font-size:38px;
+}
+.searchBar>span{
+  font-size:20px;
+  margin:5px;
+  color:cyan;
+  display:block;
+
+}
+.searchBar>input{
+  width:30%;
+  margin:auto;
+  height:20px;
+  font-size:20px;
+  padding:15px;
+  margin:10px 0px;
+}
+
+/*movie list style*/
+.movieList{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+    width: 50%;
+    margin: 80px auto;
+    border-radius:5px;
+    
+}
+.movieList tr:nth-child(even){background-color: #dde0e0;}
+.movieList tr:nth-child(odd){background-color: #ebfafa;}
+.movieList th{
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: cyan;
+  color: black;
+  font-size:20px;
+}
+.movieList th{
+  border:1px solid black;
+}
+.movieList tr{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: cyan;
+  color: black;
+  border:1px solid black;
+}
+.movieList tr:hover{
+  background-color: aqua;
+}
+.movieList td, .movieList th {
+  border: 1px solid black;
+  padding: 8px;
+}
+.movieList a{
+  text-decoration: none;
+  color:black;
+}
+/* movie detail page*/
+.movieDetailTable{
+  width:100%;
+  min-height:100%;
+  position:absolute;
+  top:0;
+  background: black;
+  color:white;
+  padding:20px;
+  box-sizing: border-box;
+
+}
+.movieDetailTable h2{
+ 
+width:100%;
+text-align:center;
+margin-top:0;
+margin-bottom:10px;
+}
+.movieDetailTable table{
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+   border-collapse: collapse;
+    width: 50%;
+    margin: 20px auto;
+    border-radius:5px;
+   text-align:left;
+   background: cyan;
+   color:black;
+   position:relative;
+    
+}
+.movieDetailTable table th  {
+  border:1px solid black;
+  padding:10px;
+}
+.movieDetailTable>table td{
+  border: 1px solid black;
+  padding:10px;
+  border-collapse: collapse;
+}
+ .charList > span{
+  border-collapse: collapse;
+  padding:0;
+  display:block;
+}
+
+/*for medium and small screen*/
+@media only screen and (max-width: 700px) {
+  .searchBar{
+    margin:0;
+  }
+  .movieList{
+    width:90%;
+    margin:10px auto;
+  }
+  .movieDetailTable table{
+    width:90%;
+  }
+} 
