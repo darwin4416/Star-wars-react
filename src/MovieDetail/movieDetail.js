@@ -53,7 +53,11 @@ class MovieDetail extends Component {
 
     render(){
         if(this.state.loader){
+<<<<<<< HEAD
             setTimeout(() => {this.setState({showCrawl: false})},30000) //hide the animation after 8 sec
+=======
+            setTimeout(() => {this.setState({showCrawl: false})},8000) //hide the animation after 8 sec
+>>>>>>> 43807f00a868505ee6c800c0954e4ff94402c961
         }
       
         if(!this.state.loader){

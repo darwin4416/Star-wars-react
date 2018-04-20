@@ -4,7 +4,11 @@ Below you will find some information on how to perform common tasks.<br>
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 ## Table of Contents
+<<<<<<< HEAD
 ![alt text](https://github.com/darwin4416/Star-wars-react/tree/master/src/images/home.png)
+=======
+
+>>>>>>> 43807f00a868505ee6c800c0954e4ff94402c961
 - [Updating to New Releases](#updating-to-new-releases)
 - [Sending Feedback](#sending-feedback)
 - [Folder Structure](#folder-structure)
